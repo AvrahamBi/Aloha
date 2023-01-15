@@ -15,7 +15,7 @@ public class Question {
         this.correctAns = correctAns;
     }
 
-    @Override
+/*    @Override
     public String toString() {
         return "Question{" +
                 "id=" + id +
@@ -23,5 +23,5 @@ public class Question {
                 ", answers=" + answers +
                 ", correctAns=" + correctAns +
                 '}';
-    }
+    }*/
 }
