@@ -1,6 +1,6 @@
 ---
 id: tae7g
-title: How o Controller
+title: How To Controller
 file_version: 1.1.1
 app_version: 1.0.14
 ---
