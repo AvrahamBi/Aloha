@@ -1,10 +1,8 @@
 ---
 id: tae7g
-name: How o Controller
-file_version: 1.1.0
-app_version: 1.0.6
-file_blobs:
-  src/main/java/com/AlohaGroup/Aloha/question/QuestionController.java: b1f6d876e9af8c15e96e87a43d05851a48e7d249
+title: How o Controller
+file_version: 1.1.1
+app_version: 1.0.14
 ---
 
 <br/>
@@ -15,24 +13,16 @@ Basic controller uses generator demo
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/main/java/com/AlohaGroup/Aloha/question/QuestionController.java
 ```java
-🟩 10     @RestController
-🟩 11     public class QuestionController {
-🟩 12     
-🟩 13         private final QuestionService questionService;
-🟩 14     
-🟩 15         @Autowired
-🟩 16         public QuestionController(QuestionService questionService){
-🟩 17             this.questionService = questionService;
-🟩 18         }
-🟩 19     
-🟩 20         @GetMapping("/questions")
-🟩 21         public List<Question> getQuestions(){
-🟩 22             return questionService.getQuestions();
-🟩 23         }
-🟩 24     
-🟩 25     
-🟩 26     }
-🟩 27     
+29         @GetMapping
+30         public List<Question> getQuestions(){
+31             //Faker faker = new Faker();
+32             String id = "12546"; //faker.idNumber().valid();
+33             String content = "dfkjgnttn"; //faker.familyGuy().quote();
+34             List<String> answers = List.of("Yes", "No");
+35             Question q  = new Question(id, content, answers, 1);
+36             return List.of(q);
+37         }
+38     
 ```
 
 <br/>
