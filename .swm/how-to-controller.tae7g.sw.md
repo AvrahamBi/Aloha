@@ -2,7 +2,7 @@
 id: tae7g
 title: How To Controller
 file_version: 1.1.1
-app_version: 1.0.14
+app_version: 1.0.17
 ---
 
 <br/>
@@ -13,16 +13,15 @@ Basic controller uses generator demo
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/main/java/com/AlohaGroup/Aloha/question/QuestionController.java
 ```java
-29         @GetMapping
-30         public List<Question> getQuestions(){
-31             //Faker faker = new Faker();
-32             String id = "12546"; //faker.idNumber().valid();
-33             String content = "dfkjgnttn"; //faker.familyGuy().quote();
-34             List<String> answers = List.of("Yes", "No");
-35             Question q  = new Question(id, content, answers, 1);
-36             return List.of(q);
-37         }
-38     
+24         @GetMapping
+25         public Question getQuestions(){
+26             Faker faker = new Faker();
+27             String id = faker.idNumber().valid();
+28             String content = faker.familyGuy().quote();
+29             List<String> answers = List.of("Yes", "No");
+30             Question q  = new Question();
+31             return q;
+32         }
 ```
 
 <br/>
