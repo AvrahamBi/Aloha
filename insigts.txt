@@ -1,0 +1,16 @@
+
+---------------------------------------
+
+Useful way to understand exceptions:
+
+try{
+            code with error
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+----------------------------------------
+
+You need getters and setters to convert on object to JSON
+if you don't want you can read that link:
+https://stackoverflow.com/questions/8367312/serializing-with-jackson-json-getting-no-serializer-found

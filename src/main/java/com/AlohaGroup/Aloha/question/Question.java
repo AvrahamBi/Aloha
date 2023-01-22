@@ -1,7 +1,13 @@
 package com.AlohaGroup.Aloha.question;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.List;
 
+
+@Getter @Setter @NoArgsConstructor
 public class Question {
     private String id;
     private String content;
@@ -15,7 +21,7 @@ public class Question {
         this.correctAns = correctAns;
     }
 
-/*    @Override
+    @Override
     public String toString() {
         return "Question{" +
                 "id=" + id +
@@ -23,5 +29,5 @@ public class Question {
                 ", answers=" + answers +
                 ", correctAns=" + correctAns +
                 '}';
-    }*/
+    }
 }
