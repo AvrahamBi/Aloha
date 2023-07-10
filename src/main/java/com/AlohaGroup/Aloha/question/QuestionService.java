@@ -18,7 +18,6 @@ public class QuestionService {
         List<String> answers = List.of("Yes", "No");
 
         return List.of(new Question(id, content, answers, 1));
-    } // todo I can send strings but not Question, got 500 error code
-        // todo : https://howtodoinjava.com/spring5/webmvc/controller-getmapping-postmapping/      - java spring
-    // todo : https://spec.openapis.org/oas/v3.1.0#openapi-specification                           -  API sepceifications
+    }
+
 }

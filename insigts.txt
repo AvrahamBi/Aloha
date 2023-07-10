@@ -14,3 +14,7 @@ try{
 You need getters and setters to convert on object to JSON
 if you don't want you can read that link:
 https://stackoverflow.com/questions/8367312/serializing-with-jackson-json-getting-no-serializer-found
+
+-----------------------------------------
+
+OpenAPI SPEC: https://spec.openapis.org/oas/v3.1.0#openapi-specification
